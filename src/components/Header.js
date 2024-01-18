@@ -3,7 +3,7 @@ import './common.css'
 function Header() {
   return (
     <div className='main-header'>
-      <h1>Manager</h1>
+      <h1>Task Manager</h1>
     </div>
   )
 }

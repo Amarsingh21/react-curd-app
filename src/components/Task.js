@@ -6,9 +6,12 @@ const TaskList = ({ tasks, onDelete, onComplete }) => {
       {tasks.map((task, index) => (
         <li key={index} className={task.completed ? 'completed-task' : 'taskItem'}>
           <span>{task.text}</span>
-          <span className='text-btn'><button onClick={() => onComplete(index)}>&#10004;</button>
+          {/* <div className='text-btn' > */}
+          <span className='text-btn'>
+            <button onClick={() => onComplete(index)} >&#10004;</button>
             <button onClick={() => onDelete(index)}>X</button>
           </span>
+          {/* </div> */}
         </li>
       ))}
     </ul>
